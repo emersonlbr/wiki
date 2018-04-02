@@ -10,6 +10,8 @@ app.use(express.static(__dirname + '/public'));
 app.use(homeRoutes);
 app.use(blogRoutes);
 
-app.listen(process.env.PORT || 5000, () => { 
-  console.log('Server is up on port 5000');
+//Server set up
+const PORT = 5000;
+app.listen(process.env.PORT || PORT, () => { 
+  console.log('Server is up on port ' + PORT);
 });
