@@ -1,0 +1,82 @@
+<body>
+  
+  <div id="container" class="container">
+    <a href="#popup"><button>Pop UP!</button></a>
+    <div id="popup" class="popup">
+      <a href="#container"><button>X</button></a>
+      <div class="content">
+        <h1>hello</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa totam dolore quibusdam incidunt doloremque? Tenetur nemo, provident quam maxime quia officia cumque eius ea totam eos quis voluptate sed rem?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus exercitationem, saepe natus impedit nostrum possimus quod consequatur blanditiis dolor magnam corrupti, esse tempora id accusantium quos voluptas iste cum ea.</p>
+
+        <h3>Hellow rold!</h3>
+      </div>
+    </div>
+  </div>
+
+
+  <style>
+  
+    .popup {
+      background-color: red;
+      margin: auto;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.795);
+      z-index: 2;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      /* hide the pop up */
+      /* if you set display: 0 you cant animate it */
+      opacity: 0;
+      visibility: hidden;
+      transition: all .4s;
+      
+    }
+
+    /* the target is what the href points to */
+    .popup:target {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .content {
+      
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+
+      width: 75%;
+      height: 300px;
+      background-color: aliceblue;
+    }
+  
+  </style>
+
+  <script>
+  
+  // const btn = document.querySelector('button');
+
+  // btn.onclick = () => {
+  //   pop.style.opacity = '1';
+  //   pop.style.visibility = 'visible';
+  // }
+
+  // const pop = document.querySelector('.popup');
+
+  // pop.onclick = () => {
+  //   pop.style.opacity = '0';
+  //   pop.style.visibility = 'hidden';
+  // }
+  
+  </script>
+
+</body>
